@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { AddPattern, TextAreaPattern } from "./components";
+import { useState } from "react";
 
 function App() {
+  const [value, setValue] = useState("");
+  console.log(value);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AddPattern
+        seperator={"%"}
+        pattern={"first"}
+        tagClass={"tagClass"}
+        setValue={setValue}
+        node={<button> Add Pattern</button>}
+      />
+      <TextAreaPattern
+        setValue={setValue}
+        node={<pre></pre>}
+        classRoot="class"
+      />
     </div>
   );
 }
