@@ -5,11 +5,11 @@ add style and own node into textarea
 ### `install Library`
 npm i textarea-with-pattern
 ### `import`
-import { AddPattern, TextAreaPattern } from 'textareawithpattern';
+import { AddPattern, TextAreaPattern } from 'textarea-with-chipst';
 ### `use Library`
 
 ```javascript
-import { AddPattern, TextAreaPattern } from "textareawithpattern";
+import { AddPattern, TextAreaPattern } from "textarea-with-chipst";
 import { useState } from "react";
 
 export default function App() {
